@@ -29,7 +29,7 @@ EOL
 [Interface]
 PrivateKey = $(cat "/etc/wireguard/keys/client${client_num}_private_key")   # Приватный ключ клиента
 Address = 10.7.0.${client_num}/24, fddd:2c4:2c4:2c4::${client_num}/64
-DNS = 1.1.1.1, 1.0.0.1
+DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
 
 [Peer]
 PublicKey = $(cat "publicServ.key")   # Публичный ключ сервера
